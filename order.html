@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Your Order - [Bakery Name]</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo">[Bakery Name]</div>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<main style="padding:50px;">
+
+<h2 id="item-title">Order Item</h2>
+
+<!-- Item detail + form -->
+<div class="item-detail" style="display:flex; flex-wrap:wrap; gap:30px; margin-bottom:50px;">
+    <div class="item-image">
+        <img id="item-img" src="images/placeholder.jpg" alt="Item" style="width:300px; border-radius:10px;">
+    </div>
+    <div class="item-info" style="flex:1; min-width:300px;">
+        <p id="item-desc">
+            <!-- History / paragraph ng tinapay -->
+        </p>
+
+        <form id="order-form">
+            <label>Name:</label>
+            <input type="text" name="name" required>
+
+            <label>Address:</label>
+            <input type="text" name="address" required>
+
+            <label>Phone:</label>
+            <input type="text" name="phone" required>
+
+            <label>Quantity:</label>
+            <input type="number" name="quantity" min="1" value="1">
+
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+</div>
+
+<!-- Recommended items -->
+<h3>Recommended</h3>
+<div class="gallery-grid">
+    <a href="order.html?item=ensaymada">
+        <div class="gallery-card">
+            <img src="images/ensaymada.jpg" alt="Ensaymada">
+            <div class="caption">Ensaymada</div>
+            <div class="price-tooltip">₱25.00</div>
+        </div>
+    </a>
+    <a href="order.html?item=ube_cake">
+        <div class="gallery-card">
+            <img src="images/ube_cake.jpg" alt="Ube Cake">
+            <div class="caption">Ube Cake</div>
+            <div class="price-tooltip">₱120.00</div>
+        </div>
+    </a>
+    <a href="order.html?item=buko_pie">
+        <div class="gallery-card">
+            <img src="images/buko_pie.jpg" alt="Buko Pie">
+            <div class="caption">Buko Pie</div>
+            <div class="price-tooltip">₱120.00</div>
+        </div>
+    </a>
+    <a href="order.html?item=monay">
+        <div class="gallery-card">
+            <img src="images/monay.jpg" alt="Monay">
+            <div class="caption">Monay</div>
+            <div class="price-tooltip">₱30.00</div>
+        </div>
+    </a>
+    <!-- Add more recommended items here -->
+</div>
+
+</main>
+
+<footer>
+    <p>© 2026 [Bakery Name] | All Rights Reserved</p>
+</footer>
+
+<!-- JS to auto-load item info -->
+<script>
+const params = new URLSearchParams(window.location.search);
+const item = params.get('item');
+
+// Add all tinapay here
+const itemsData = {
+    pandesal: {
+        name: "Pan de Sal",
+        img: "images/pandesal.jpg",
+        desc: "Pan de Sal – classic soft roll, perfect for breakfast or snacks. Often paired with coffee or hot chocolate. Soft inside with slightly crusty outside, a traditional Filipino favorite."
+    },
+    monay: {
+        name: "Monay",
+        img: "images/monay.jpg",
+        desc: "Monay – slightly sweet, dense bread. Traditionally eaten for breakfast or merienda, often paired with coffee. Known for its soft interior and slightly chewy crust."
+    },
+    spanish_bread: {
+        name: "Spanish Bread",
+        img: "images/spanish_bread.jpg",
+        desc: "Spanish Bread – soft, buttery roll with sweet filling. Classic Filipino bakery item, often enjoyed as snack or merienda."
+    },
+    ensaymada: {
+        name: "Ensaymada",
+        img: "images/ensaymada.jpg",
+        desc: "Ensaymada – fluffy, buttery, topped with sugar and cheese. A classic sweet bread in the Philippines."
+    },
+    pandesal_variants: {
+        name: "Pandesal Variants",
+        img: "images/pandesal_variants.jpg",
+        desc: "Pandesal Variants – ube, cheese, or chocolate-filled versions of the classic bread. Perfect for all ages."
+    },
+    hopia: {
+        name: "Hopia",
+        img: "images/hopia.jpg",
+        desc: "Hopia – soft pastry filled with mung bean, ube, or red bean filling. A popular Filipino snack."
+    },
+    buko_pie: {
+        name: "Buko Pie",
+        img: "images/buko_pie.jpg",
+        desc: "Buko Pie – young coconut custard in flaky crust. Sweet, rich, and iconic dessert from Laguna."
+    },
+    brazo_de_mercedes: {
+        name: "Brazo de Mercedes",
+        img: "images/brazo_de_mercedes.jpg",
+        desc: "Brazo de Mercedes – soft meringue roll with custard filling. Delicious Filipino dessert."
+    },
+    maja_blanca: {
+        name: "Maja Blanca Cake",
+        img: "images/maja_blanca.jpg",
+        desc: "Maja Blanca Cake – creamy coconut dessert cake. Often served during fiestas and celebrations."
+    },
+    pichi_pichi: {
+        name: "Coconut Macaroons / Pichi-Pichi",
+        img: "images/pichi_pichi.jpg",
+        desc: "Pichi-Pichi – chewy, sweet coconut treat. Served with grated coconut coating."
+    },
+    ube_cake: {
+        name: "Ube Cake / Roll",
+        img: "images/ube_cake.jpg",
+        desc: "Ube Cake / Roll – purple yam goodness. Soft, sweet, and moist, a Filipino classic dessert."
+    },
+    leche_flan: {
+        name: "Leche Flan",
+        img: "images/leche_flan.jpg",
+        desc: "Leche Flan – creamy caramel custard. Rich and silky dessert."
+    },
+    mango_cake: {
+        name: "Mango Cake",
+        img: "images/mango_cake.jpg",
+        desc: "Mango Cake – layered sponge with fresh mangoes or cream. Perfect for celebrations."
+    },
+    yema_cake: {
+        name: "Yema Cake",
+        img: "images/yema_cake.jpg",
+        desc: "Yema Cake – soft sponge with sweet custard topping."
+    }
+    // Add all remaining tinapay here if needed
+};
+
+// Load item info
+if(item && itemsData[item]) {
+    const data = itemsData[item];
+    document.getElementById('item-title').innerText = `Order ${data.name}`;
+    document.getElementById('item-img').src = data.img;
+    document.getElementById('item-img').alt = data.name;
+    document.getElementById('item-desc').innerText = data.desc;
+}
+
+// Demo form submission
+document.getElementById('order-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Order placed successfully!');
+    this.reset();
+});
+</script>
+
+</body>
+</html>
