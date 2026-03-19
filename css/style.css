@@ -40,7 +40,7 @@ header nav a:hover {
 
 /* Hero Section */
 .hero {
-    background-image: url('../images/bakery-hero.jpg');
+    background-image: url('../images/bgbg.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
@@ -325,7 +325,7 @@ margin-top:30px;
 }
 
 .hero {
-    background-image: url('../images/small-bakery-business-1024x768.jpg'); /* full-screen image */
+    background-image: url('../images/bgbg.jpg'); /* full-screen image */
     height: 720px; /* fullscreen height */
     background-size: cover;
     background-position: center;
@@ -366,4 +366,84 @@ margin-top:30px;
 
 .promo-card .image-frame img:hover {
     transform: scale(1.05); /* zoom effect on hover */
+}
+
+/* Global font setup */
+body {
+    font-family: 'Quicksand', sans-serif;
+    color: #333; /* dark text for readability */
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #4a2c0a; /* soft brown bakery vibe */
+}
+
+/* Logo / Special Titles */
+.logo {
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem; /* adjust as needed */
+    color: #b5651d; /* cozy bakery orange-brown */
+}
+
+/* Buttons / Captions */
+button, .caption {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Optional: make small text readable */
+small, input, textarea {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* Product gallery container */
+.product-gallery {
+    display: flex;            /* Para mag-row ang mga images */
+    flex-wrap: wrap;          /* Auto-wrap kung marami */
+    gap: 15px;                /* Space between images */
+    justify-content: center;  /* Center sa container */
+}
+
+/* Each image */
+.product-gallery img {
+    width: 280px;             /* Fixed width for uniform size */
+    height: 280px;            /* Fixed height for uniform size */
+    object-fit: cover;        /* Crop / scale image to fit */
+    border-radius: 15px;      /* Optional: rounded corners */
+    transition: transform 0.3s; /* Optional: hover effect */
+}
+
+.product-gallery img:hover {
+    transform: scale(1.05);   /* Optional: zoom on hover */
+}
+
+
+/* Buttons Bakery Style */
+button {
+    background-color: #b5651d; /* warm bakery brown */
+    color: #fff;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-right: 10px; /* space between buttons */
+}
+
+button:hover {
+    background-color: #d68c5a; /* lighter warm hover */
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.description p {  
+    font-family: 'Quicksand', sans-serif;  
+    font-size: 18px;  
+    color: #4a2c0a;  
+    line-height: 1.7;  
 }

@@ -3,14 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Place Your Order - [Bakery Name]</title>
+    <title>Place Your Order - Buboy Tinapayan</title>
+
+<!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600&family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <!-- Header -->
 <header>
-    <div class="logo">[Bakery Name]</div>
+    <div class="logo">Buboy Tinapayan</div>
     <nav>
         <a href="index.html">Home</a>
         <a href="about.html">About</a>
@@ -27,10 +32,10 @@
 <!-- Item detail + form -->
 <div class="item-detail" style="display:flex; flex-wrap:wrap; gap:30px; margin-bottom:50px;">
     <div class="item-image">
-        <img id="item-img" src="images/placeholder.jpg" alt="Item" style="width:300px; border-radius:10px;">
+        <img id="item-img" src="images/placeholder.jpg" alt="Item" style="width:250px; border-radius:20px;">
     </div>
-    <div class="item-info" style="flex:1; min-width:300px;">
-        <p id="item-desc">
+    <div class="item-info" style="flex:1; min-width:500px;">
+        <p id="item-desc" style="font-size:1.4rem; line-height:1.6;">
             <!-- History / paragraph ng tinapay -->
         </p>
 
@@ -57,21 +62,21 @@
 <div class="gallery-grid">
     <a href="order.html?item=ensaymada">
         <div class="gallery-card">
-            <img src="images/ensaymada.jpg" alt="Ensaymada">
+            <img src="images/ensaymada-3.jpg" alt="Ensaymada">
             <div class="caption">Ensaymada</div>
             <div class="price-tooltip">₱25.00</div>
         </div>
     </a>
     <a href="order.html?item=ube_cake">
         <div class="gallery-card">
-            <img src="images/ube_cake.jpg" alt="Ube Cake">
+            <img src="images/ubecake.jpg" alt="Ube Cake">
             <div class="caption">Ube Cake</div>
             <div class="price-tooltip">₱120.00</div>
         </div>
     </a>
     <a href="order.html?item=buko_pie">
         <div class="gallery-card">
-            <img src="images/buko_pie.jpg" alt="Buko Pie">
+            <img src="images/BukoPie.jpg" alt="Buko Pie">
             <div class="caption">Buko Pie</div>
             <div class="price-tooltip">₱120.00</div>
         </div>
@@ -89,7 +94,7 @@
 </main>
 
 <footer>
-    <p>© 2026 [Bakery Name] | All Rights Reserved</p>
+    <p>© 2026 Buboy Tinapayan | All Rights Reserved</p>
 </footer>
 
 <!-- JS to auto-load item info -->
@@ -102,22 +107,22 @@ const itemsData = {
     pandesal: {
         name: "Pan de Sal",
         img: "images/pandesal.jpg",
-        desc: "Pan de Sal – classic soft roll, perfect for breakfast or snacks. Often paired with coffee or hot chocolate. Soft inside with slightly crusty outside, a traditional Filipino favorite."
+        desc: "Walang pinagsasabi, classic sa classic—ang Pan de Sal ng Buboy’s Tinapayan ay freshly baked, slightly sweet, at perfectly soft sa loob with a golden crust. Parang bawat baguette ay may story—mula sa morning kneading hanggang sa pagbubukas ng oven. Dito sa Buboy’s, mahalaga sa amin na bawat customer ay maramdaman ang freshness at pagmamahal sa paggawa. Pan de Sal namin isn’t just bread—it’s a piece of Filipino tradition na patuloy naming pinapangalagaan. Every bite is like a warm hug sa umaga mo."
     },
     monay: {
         name: "Monay",
         img: "images/monay.jpg",
-        desc: "Monay – slightly sweet, dense bread. Traditionally eaten for breakfast or merienda, often paired with coffee. Known for its soft interior and slightly chewy crust."
+        desc: "Sa Buboy’s Tinapayan, ang monay ay simpleng tinapay na may dalang kakaibang comfort at nostalgia sa bawat kagat. Golden ang crust nito na may slight crisp, habang sa loob ay soft, fluffy, at satisfying ang bawat himay. Hindi ito yung tinapay na kailangan magpaka-bongga para mapansin—dahil sa Buboy’s, naniniwala kami na nasa kalidad at puso ang tunay na sarap. Bawat monay ay dahan-dahang pinapaalsa at maingat na binubuo para makuha ang perfect texture. Perfect siya ipares sa kape o palaman, habang pinapaalala ang mga simpleng sandali na talagang mahalaga."
     },
     spanish_bread: {
         name: "Spanish Bread",
-        img: "images/spanish_bread.jpg",
-        desc: "Spanish Bread – soft, buttery roll with sweet filling. Classic Filipino bakery item, often enjoyed as snack or merienda."
+        img: "images/Spanish-Bread-Recipe-Feature1.jpg",
+        desc: "Sa Buboy’s Tinapayan, ang Spanish Bread ay isa sa mga paboritong balik-balikan—yung tipong isang kagat pa lang, parang bumabalik ka na sa umaga ng kabataan mo, hawak ang mainit-init na tinapay habang papunta sa school. Soft at fluffy ang labas, tapos sa loob ay may buttery, sweet na palaman na sakto lang ang tamis. Bawat piraso ay hand-rolled at dahan-dahang binibake para makuha ang golden finish at perfect na texture. Hindi lang ito basta merienda—ito ay paalala ng simple, masayang moments na gusto naming ibalik sa bawat customer sa Buboy’s."
     },
     ensaymada: {
         name: "Ensaymada",
-        img: "images/ensaymada.jpg",
-        desc: "Ensaymada – fluffy, buttery, topped with sugar and cheese. A classic sweet bread in the Philippines."
+        img: "images/ensaymada-3.jpg",
+        desc: "Sa Buboy’s Tinapayan, ang ensaymada ay hindi lang basta matamis na tinapay—isa itong maliit na celebration sa bawat kagat. Malambot at fluffy ang dough, generously brushed with creamy butter at binudburan ng asukal at keso na nagbibigay ng perfect balance ng alat at tamis. Bawat ensaymada ay ginagawa with care, mula sa maingat na pagmasa hanggang sa tamang pagbe-bake para makuha ang signature softness na hinahanap mo. Sa Buboy’s, gusto naming maramdaman mo ang warmth at effort sa bawat piraso—parang simpleng reward sa sarili o pasalubong na may kasamang pagmamahal."
     },
     pandesal_variants: {
         name: "Pandesal Variants",
@@ -127,49 +132,113 @@ const itemsData = {
     hopia: {
         name: "Hopia",
         img: "images/hopia.jpg",
-        desc: "Hopia – soft pastry filled with mung bean, ube, or red bean filling. A popular Filipino snack."
+        desc: "Sa Buboy’s Tinapayan, ang hopia ay isang classic na hindi nawawala sa puso ng bawat Pilipino—yung tipong simple sa labas pero puno ng sarap sa loob. Flaky at slightly crisp ang pastry, habang ang filling ay rich, smooth, at perfectly sweet, mapa-munggo man o ube. Bawat piraso ay maingat na binubuo at binibake para makuha ang tamang balance ng texture at lasa. Sa Buboy’s, hindi lang namin ginagawa ang hopia para maging dessert, kundi para magdala ng nostalgia at comfort sa bawat kagat—parang munting alaala ng mga panahong payapa at masaya."
     },
     buko_pie: {
         name: "Buko Pie",
-        img: "images/buko_pie.jpg",
-        desc: "Buko Pie – young coconut custard in flaky crust. Sweet, rich, and iconic dessert from Laguna."
+        img: "images/BukoPie.jpg",
+        desc: "Sa Buboy’s Tinapayan, ang Buko Pie ay parang isang mainit na yakap mula sa nakaraan—comforting, sweet, at punong-puno ng alaala. Golden at flaky ang crust na maingat na binibake para makuha ang perfect na crunch, habang sa loob ay makapal at creamy na buko filling na gawa sa fresh young coconut. Hindi kami nagtitipid sa sangkap, dahil para sa amin, bawat pie ay dapat ramdam ang kalidad at pagmamahal. Sa bawat slice, para kang dinadala sa mga handaan, road trips, at simpleng moments kasama ang pamilya—dahil sa Buboy’s, bawat pie ay may kwento."
     },
     brazo_de_mercedes: {
         name: "Brazo de Mercedes",
-        img: "images/brazo_de_mercedes.jpg",
-        desc: "Brazo de Mercedes – soft meringue roll with custard filling. Delicious Filipino dessert."
+        img: "images/brazo.jpg",
+        desc: "Sa Buboy’s Tinapayan, ang Brazo de Mercedes ay isang eleganteng dessert na may dalang tamis at lambing sa bawat kagat. Soft at airy ang meringue na parang natutunaw sa bibig, habang ang loob ay puno ng creamy, rich custard na perfectly balanced ang tamis. Bawat roll ay maingat na ginagawa—from whipping the egg whites hanggang sa gentle rolling—para masigurong light, smooth, at satisfying ang bawat slice. Sa Buboy’s, hindi lang ito pang-handa, kundi isang paalala ng mga espesyal na sandali na gusto mong balikan at ulitin."
     },
     maja_blanca: {
         name: "Maja Blanca Cake",
-        img: "images/maja_blanca.jpg",
-        desc: "Maja Blanca Cake – creamy coconut dessert cake. Often served during fiestas and celebrations."
+        img: "images/maja.jpg",
+        desc: "Sa Buboy’s Tinapayan, ang Maja Blanca Cake ay isang modern twist sa isang paboritong klasikong kakanin—pinagsama ang creamy goodness at festive charm sa bawat slice. Smooth at milky ang texture nito, may tamang tamis, at may halong corn kernels na nagbibigay ng kakaibang bite at nostalgia. Carefully layered at beautifully prepared, bawat cake ay ginagawa with patience para makuha ang perfect consistency at lasa. Sa Buboy’s, ang Maja Blanca Cake ay hindi lang pang-dessert—isa itong paalala ng mga handaan, tawanan, at simpleng saya na gusto naming maramdaman mo sa bawat kagat."
     },
     pichi_pichi: {
         name: "Coconut Macaroons / Pichi-Pichi",
         img: "images/pichi_pichi.jpg",
-        desc: "Pichi-Pichi – chewy, sweet coconut treat. Served with grated coconut coating."
+        desc: " ."
     },
     ube_cake: {
-        name: "Ube Cake / Roll",
-        img: "images/ube_cake.jpg",
-        desc: "Ube Cake / Roll – purple yam goodness. Soft, sweet, and moist, a Filipino classic dessert."
+        name: "Ube Cake - 120",
+        img: "images/ubecake.jpg",
+        desc: "Sa Buboy’s Tinapayan, ang Ube Cake ay isang makulay na simbolo ng saya at tamis ng bawat selebrasyon. Soft at moist ang bawat layer, infused with rich and natural ube flavor na hindi nakakasawa sa bawat kagat. May creamy frosting na perfectly balanced ang tamis, kaya bawat slice ay smooth at satisfying. Bawat cake ay maingat na binubuo—from baking hanggang sa pag-layer at pagde-decorate—dahil para sa amin, bawat detalye mahalaga. Sa Buboy’s, ang Ube Cake ay hindi lang pang-okasyon, kundi isang sweet reminder ng masasayang alaala na gusto naming ibahagi sa’yo."
     },
     leche_flan: {
         name: "Leche Flan",
-        img: "images/leche_flan.jpg",
-        desc: "Leche Flan – creamy caramel custard. Rich and silky dessert."
+        img: "images/leche.jpg",
+        desc: "Sa Buboy’s Tinapayan, ang Leche Flan ay parang soft, creamy hug na tumutunaw sa bibig. Isa itong classic Filipino dessert na may Spanish roots, na dinala noong panahon ng Kastila pero pinasikat ng mga Pilipino gamit ang extra egg yolks at condensed milk para mas rich at silky. Sa bawat slice, ramdam mo yung tamis at smooth texture na perfect sa special occasions—birthdays, fiestas, o kahit simpleng weekend treat lang. Hindi lang ito pang-dessert; para sa Buboy’s, bawat flan ay gawa with care—steamed o baked gamit ang water bath para makuha ang signature creamy consistency. Mainam ito ipares sa toasted bread o simpleng kainin lang as is, habang nagre-relax at nagre-reminisce ng simple joys sa buhay. Ang bawat Leche Flan ay paalala na kahit simple, pwedeng maging espesyal kapag may effort at pagmamahal sa paggawa."
     },
-    mango_cake: {
-        name: "Mango Cake",
-        img: "images/mango_cake.jpg",
-        desc: "Mango Cake – layered sponge with fresh mangoes or cream. Perfect for celebrations."
+    chocolate: {
+        name: "Chocolate Cake",
+        img: "images/choco.jpg",
+        desc: "Sa Buboy’s Tinapayan, ang Chocolate Cake ay ultimate comfort dessert. Soft, moist, at rich ang bawat layer, with chocolatey goodness na instant happiness sa bawat kagat. Ginagawa namin ito para ramdam mo ang warmth at indulgence sa bawat slice—perfect for birthdays, celebrations, o kahit simpleng merienda kasama ang pamilya. Pinipili namin ang quality cocoa at butter para perfect ang balance ng tamis at rich chocolate flavor. Sa Buboy’s, hindi lang cake ang ginagawa namin; bawat slice ay paalala ng simple pleasures at happiness sa bawat home celebration. Maaaring i-pair sa chocolate ganache, frosting, o ice cream para mas enjoyable, pero kahit simple lang, punong-puno na ng nostalgia at comfort sa bawat kagat."
     },
     yema_cake: {
         name: "Yema Cake",
-        img: "images/yema_cake.jpg",
-        desc: "Yema Cake – soft sponge with sweet custard topping."
-    }
-    // Add all remaining tinapay here if needed
+        img: "images/yema.jpg",
+        desc: "Sa Buboy’s Tinapayan, ang Yema Cake ay isang Filipino classic na kombinasyon ng soft, fluffy sponge cake at creamy, sweet yema custard. Sa bawat slice, ramdam mo yung tamis ng yema at lightness ng cake, perfect sa birthdays, fiestas, o kahit merienda lang. Bawat cake ay ginawa with care—from soft chiffon layers hanggang sa creamy custard topping—para perfect ang texture at lasa sa bawat kagat. Ang Yema Cake ay hindi lang pang-dessert; isa rin itong paalala ng simple joys at happy memories sa bahay, habang pinapakita ang creativity at passion ng Buboy’s Tinapayan sa paggawa ng classic Filipino treats na may modern touch."
+    },
+    otap: {
+        name: "Otap",
+        img: "images/otap.jpg",
+        desc: "Sa Buboy’s Tinapayan, ang otap ay isang crispy, flaky na treat na puno ng character at nostalgia sa bawat kagat. Manipis at layered ang pastry, na may light crunch at tamang tamis na galing sa asukal na naka-coat sa ibabaw. Bawat piraso ay maingat na nilalaminate at binibake para makuha ang signature layers na nagbibigay ng satisfying texture. Hindi ito basta-basta ginagawa—kailangan ng tiyaga at tamang proseso para maging perfect ang bawat otap. Sa Buboy’s, ginagawa namin ito with pride, para sa bawat customer na naghahanap ng simple pero espesyal na merienda na babalik-balikan."
+    },
+    rosquillos: {
+        name: "Rosquillos",
+        img: "images/Rosquillos.jpg",
+        desc: "Sa Buboy’s Tinapayan, ang rosquillos ay simple pero espesyal—crispy sa labas, light at melt-in-your-mouth sa loob. Perfect ang tamang sweetness at buttery flavor, kaya kahit isang kagat lang ay nagdadala ng nostalgia ng mga childhood merienda o fiesta sa barangay. Bawat piraso ay maingat na hinuhubog at binibake para maging consistent ang texture at golden brown ang kulay. Sa Buboy’s, hindi lang namin ginagawa ang rosquillos para sa snack—ito ay paalala ng warmth, simplicity, at pagmamahal sa bawat bagay na niluluto namin. Perfect ito sa kape o tsaa habang nagrerelax."
+    },
+    polvoron: {
+        name: "Polvoron",
+        img: "images/polvoron.jpg",
+        desc: "Sa Buboy’s Tinapayan, ang polvoron ay creamy, melt-in-your-mouth goodness na puno ng nostalgia sa bawat kagat. Made with finely toasted flour, rich butter, at powdered milk, bawat piraso ay carefully pressed para perfect ang texture—soft pero hindi madaling mabasag. Para sa amin sa Buboy’s, mahalaga na bawat polvoron ay consistent sa lasa at quality, kasi ito ay comfort snack na paborito ng marami mula bata hanggang matanda. Ang bawat kagat ay paalala ng simpleng kaligayahan at sweet moments, kaya’t ginagawa namin ito with love at dedication para sa bawat customer na gustong maramdaman ang warmth at care sa bawat bite."
+    },
+    lengua_de_gato: {
+        name: "Lengua de Gato",
+        img: "images/Lengua-de-Gato-Recipe-Feature.jpg",
+        desc: "Sa Buboy’s Tinapayan, ang Lengua de Gato ay isang thin, delicate cookie na perfect sa bawat afternoon snack o kasabay ng mainit na kape o tsaa. Crispy at buttery ang bawat piraso, with a subtle sweetness na hindi nakaka-overpower, kaya bawat kagat ay smooth at satisfying. Bawat cookie ay maingat na pinipilit ang tamang shape at baking time para perfect ang crispness at texture. Para sa Buboy’s, ang Lengua de Gato ay hindi lang pang-merienda—ito ay paalala ng simple joys at nostalgia ng mga childhood moments, kaya’t bawat batch ay ginawa with care at pagmamahal."
+    },
+    cheese_rolls: {
+        name: "Cheese Roll",
+        img: "images/cheeseroll.jpg",
+        desc: "Sa Buboy’s Tinapayan, ang Cheese Roll ay soft, fluffy, at perfectly buttery, na may generous na cheese filling na kumakapit sa bawat kagat. Parang instant comfort sa umaga o merienda, lalo na kapag kasabay ng mainit na kape o tsaa. Bawat roll ay maingat na hinuhubog at dahan-dahang binibake para mapanatili ang tamang texture at cheesy goodness sa loob. Sa Buboy’s, mahalaga sa amin na bawat Cheese Roll ay consistent at punong-puno ng pagmamahal, kasi gusto naming ramdam ng bawat customer ang warmth, dedication, at nostalgia na dala ng aming tinapay sa bawat simpleng sandali."
+    },
+    empanada: {
+        name: "Empanada",
+        img: "images/empanada.jpg",
+        desc: "Sa Buboy’s Tinapayan, ang Empanada ay savory delight na puno ng flavor at nostalgia sa bawat kagat. Crispy at golden ang crust, habang sa loob ay may rich at flavorful filling na carefully seasoned, para sa perfect balance ng lasa sa bawat bite. Bawat empanada ay maingat na hinahanda at binibake o piniprito nang tama para mapanatili ang tamang texture—crispy sa labas, flavorful sa loob. Para sa Buboy’s, ang Empanada ay hindi lang pagkain, kundi comfort food na nagdadala ng warmth at happy memories sa bawat customer. Perfect ito para sa merienda o kahit quick snack sa kahit anong oras."
+    },
+    siopao: {
+        name: "Siopao",
+        img: "images/siopao.jpg",
+        desc: "Sa Buboy’s Tinapayan, ang Siopao ay soft, fluffy, at punong-puno ng warmth sa bawat kagat. Ang dough ay maingat na pinagmasa at binuklod para maging perfect ang texture—soft sa labas pero firm enough para hawakan ang rich filling sa loob. May classic na meat filling o sweet variant, na perfectly seasoned at juicy, para bawat bite ay punong-puno ng lasa at satisfaction. Sa Buboy’s, hindi lang namin ito ginagawa para sa gutom—gusto naming bawat Siopao ay magdala ng comfort at nostalgia, parang mainit na yakap mula sa pamilya, handa sa bawat merienda o kahit quick snack sa kalagitnaan ng araw."
+    },
+    pan_de_coco: {
+        name: "Pan De Coco",
+        img: "images/pandecoco.jpg",
+        desc: "Sa Buboy’s Tinapayan, ang Pan de Coco ay soft, slightly sweet, at puno ng rich coconut filling na bawat kagat ay nagbibigay ng warmth at nostalgia. Fluffy ang dough, golden brown ang crust, at maingat ang bawat roll na hinuhubog para perfect ang texture at lasa. Ang coconut filling ay creamy, flavorful, at hindi overpowering, kaya perfect ang balance sa bawat bite. Sa Buboy’s, bawat Pan de Coco ay gawa with care at pagmamahal—parang simpleng paalala ng happy moments sa bahay o sa bakuran kasama ang pamilya. Ito ay perfect merienda o pangpasalubong na laging tatatak sa alaala."
+    },
+    ube_ensaymada: {
+        name: "Ube Ensaymada",
+        img: "images/ubeensaymada.jpg",
+        desc: "Sa Buboy’s Tinapayan, ang Ube Ensaymada ay perfect blend ng classic buttery goodness at vibrant ube flavor na punong-puno ng saya sa bawat kagat. Malambot at fluffy ang dough, generously brushed with butter, sprinkled with sugar, at topped with fresh grated cheese—pero may twist na natural ube flavor sa loob na nagbibigay ng kakaibang character at kulay. Bawat piraso ay maingat na hinuhubog at binibake, dahil sa Buboy’s, mahalaga sa amin na bawat ensaymada ay perfect sa texture, lasa, at presentation. Isa itong treat na nagbibigay ng comfort at nostalgia, habang pinapakita rin ang creativity at passion ng aming bakery."
+    },
+    salted_egg_cookies: {
+        name: "Salted Egg Cookies",
+        img: "images/salted.jpeg",
+        desc: "Sa Buboy’s Tinapayan, ang Salted Egg Cookies ay unique at flavorful twist sa classic cookie—crispy sa labas, slightly crumbly sa loob, at may distinct savory-salty kick mula sa real salted egg. Bawat cookie ay maingat na hinuhulma at binibake para perfect ang texture at mapanatili ang tamang balance ng lasa. Sa Buboy’s, naniniwala kami na kahit modern twist, dapat ramdam pa rin ang warmth at dedication sa bawat piraso. Kaya ang bawat Salted Egg Cookie ay hindi lang pang-merienda, kundi experience—isang kombinasyon ng nostalgia, comfort, at sorpresa sa bawat kagat na gustong ibahagi namin sa bawat customer."
+    },
+    mango_brazo: {
+        name: "Mango Brazo",
+        img: "images/mangobrazo.jpg",
+        desc: "Sa Buboy’s Tinapayan, ang Mango Brazo ay isang tropical twist sa classic Brazo de Mercedes—soft, airy meringue na may creamy custard filling at fresh mango slices na nagbibigay ng tamang tamis at freshness sa bawat kagat. Bawat roll ay maingat na hinahanda at gentle ang rolling para hindi masira ang delicate texture ng meringue, at para bawat slice ay visually appealing at satisfying sa lasa. Sa Buboy’s, ang Mango Brazo ay hindi lang dessert—ito ay paalala ng simple joys, warmth, at happy moments kasama ang pamilya o kaibigan, habang ramdam ang passion at dedication na ibinubuhos namin sa bawat creation."
+    },
+    halo_halo_cake_cup: {
+        name: "Halo Halo Cake",
+        img: "images/halohalo.jpg",
+        desc: "Sa Buboy’s Tinapayan, ang Halo-Halo Cake Cups ay playful at colorful twist sa paboritong Pinoy dessert—lahat ng classic flavors sa isang convenient, hand-held treat. Layers of soft cake, creamy custard, nata de coco, kaunting ube, at pinipilit na sweet beans at jelly, topped with a light drizzle ng leche flan or syrup, lahat carefully prepared para bawat kagat ay balanced at punong-puno ng nostalgia. Sa Buboy’s, bawat cake cup ay ginawa with care at attention sa detalye, para ramdam ng bawat customer ang warmth, joy, at dedication ng bakery sa bawat slice. Perfect ito for merienda o mini celebration kahit saan."
+    },
+
+
+
+    
+    // di pa complete tinapay dito 
 };
 
 // Load item info
